@@ -523,8 +523,12 @@
 <script>
   AOS.init({
     once: true,
-    duration: 1000,     
-    easing: 'ease-out'
+    duration: 1000,
+    easing: 'ease-out',
+    disable: function () {
+      return window.innerWidth < 900;
+    }
   });
 </script>
+
 </html>
