@@ -893,11 +893,14 @@
 }
 
 
+  
+
+
 /****************************************Adaptiv*******************************************************/
 
 @media(max-width:500px){
   .why-choose__block-for-list{
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -1381,4 +1384,5 @@
   .only-background{
     max-height: 100px;
   }
+
 }
