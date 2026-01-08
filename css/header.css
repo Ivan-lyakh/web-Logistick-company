@@ -81,6 +81,10 @@ header{
   z-index: 100;
 }
 
+.header__container{
+  padding-left: 0px;
+}
+
 .fixed__body{
   display: flex;
   align-items: center;
@@ -527,4 +531,5 @@ body.lock {
     padding-left: 10px;
   }
 }
+
 
