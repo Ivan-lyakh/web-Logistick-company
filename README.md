@@ -1,4 +1,4 @@
-# Logistic Company Website
+# Logistic Company Website - https://ivan-lyakh.github.io/web-Logistick-company/
 
 Адаптивный многостраничный сайт для логистической компании.  
 Проект выполнен с упором на современный дизайн, удобную навигацию и анимации при прокрутке.
