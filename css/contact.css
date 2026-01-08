@@ -1,0 +1,310 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.contact{
+  background-image: url('../img_contact/section-1\ background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 100px 0px;
+  margin-top: -78px;
+}
+
+.contact h1{
+  margin-top: 20px;
+}
+
+/*----------------------------------------Adaptiv--------------------------------------------*/
+@media (max-width:900px){
+  .contact{
+    padding: 70px 0px;
+  }
+}
+
+@media (max-width:700px){
+  .contact__body h1{
+  margin-top: 20px;
+  font-size: 40px;
+}
+@media (max-width:500px){
+  .contact{
+    background-position: right;
+  }
+}
+}
+
+
+
+/*----------------------------------------Section2--------------------------------------------*/
+
+
+.contact__form{
+  padding: 80px 0px;
+  color: #fff;
+}
+
+.contact__body__form{
+  background-color: #091242;
+  width: 70%;
+  margin: 0px auto;
+  padding: 70px 50px;
+}
+
+.contact__body__top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.contact__body__title{
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.contact__body__subtitle{
+  text-align: center;
+  line-height: 140%;
+}
+
+
+.contact__icons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 14px;
+}
+.contact__icons__column h5{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact__icons__column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 33%;
+}
+
+.contact__section{
+  margin-top: 40px;
+}
+
+
+@media (max-width:1000px){
+  .contact__body{
+    width: 100%;
+  }
+  .contact__body__form{
+    width: 85%;
+  }
+}
+
+
+@media (max-width:768px){
+  .contact__icons__column span{
+    width: 50px;
+    height: 50px;
+  }
+  .contact__body{
+    padding: 50px 20px;
+  }
+  .container__form{
+    padding: 0px;
+  }
+  .form__button{
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width:550px){
+  .contact__last__column{
+    display: none;
+  }
+}
+
+
+/*----------------------------------------section3--------------------------------------------*/
+
+
+.faqq{
+  background-color: #F4F4F4;
+  padding: 80px 0px;
+  position: relative;
+}
+
+.faq__body{
+  display: flex;
+}
+
+.absolute__faq{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  z-index: 0;
+
+}
+
+.faq__body{
+  color: #1C1F35;
+}
+
+.faq__title{
+  margin-top: 20px;
+}
+
+
+
+.faq-question {
+  width: 100%;
+  padding: 16px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #fbbf24;
+  border-bottom: 2px solid #fbbf24;
+  transform: rotate(45deg);
+  transition: transform .3s;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(-135deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq__first-column{
+  flex: 40%;
+}
+
+.faq__last-column{
+  flex: 40%;
+  position: relative;
+  z-index: 10;
+}
+
+
+.faq-question{
+  margin-bottom: 20px;
+}
+
+
+.faq__contact{
+  display: flex;
+  align-items: center;
+}
+
+
+.faq__last-column-box{
+  background-color: #091242;
+  display: inline-block;
+  padding: 50px 60px;
+  color: #fff;
+  max-width: 450px;
+  max-height: 350px;
+}
+
+.faq__last-column{
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.faq__column-right__title{
+  margin-top: 20px;
+}
+
+.faq__contact{
+  margin-top: 20px;
+}
+
+.faq__contact span{
+  margin-right: 10px;
+}
+
+
+.faq__contact__text h3{
+  margin-top: 5px;
+}
+
+.faq__button{
+  padding: 15px 40px;
+  margin-top: 30px;
+}
+
+
+/*----------------------------------------ADAPTIV--------------------------------------------*/
+
+@media (max-width:1700px){
+  .absolute__faq{
+    width: 580px;
+    height: 440px;
+  }
+}
+
+@media (max-width:1500px){
+  .absolute__faq{
+    width: 500px;
+    height: 440px;
+  }
+  .faq__last-column-box{
+    max-width: 300px;
+    max-height: 350px;
+  }
+}
+
+
+@media (max-width:1200px){
+  .faqq{
+    padding-bottom: 80px;
+  }
+  .faq__body{
+    flex-direction: column;
+  }
+  .faq__last-column-box{
+    display: block;
+    min-width: 100%;
+  }
+  .absolute__faq{
+    display: none;
+  }
+  .faq__last-column{
+    padding-left: 0px;
+    margin-top: 40px;
+  }
+  .faq__title{
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width:950px){
+  
+}
+
+@media (max-width:500px){
+  .faq__last-column-box{
+    padding: 40px;
+  }
+}
+

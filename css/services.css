@@ -1,0 +1,220 @@
+/*************************************Section1***********************/
+
+.logistick-services{
+  background-image: url('../img__services/section-1\ background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 100px 0px;
+  margin-top: -78px;
+}
+
+.logistcik-services__body h1{
+  margin-top: 20px;
+}
+
+/*----------------------------------------Adaptiv--------------------------------------------*/
+@media (max-width:900px){
+  .logistick-services{
+    padding: 70px 0px;
+  }
+}
+
+@media (max-width:700px){
+  .logistcik-services__body h1{
+  margin-top: 20px;
+  font-size: 40px;
+}
+@media (max-width:500px){
+  .logistick-services{
+    background-position: right;
+  }
+}
+}
+
+/*----------------------------------------Section2--------------------------------------------*/
+
+.what-we-do{
+  background-color: #F4F4F4;
+  padding: 70px 0px;
+  color: #1C1F35;
+}
+
+.max1150px{
+  max-width: 1150px;
+  margin: 0px auto;
+  padding: 0px 130px;
+}
+
+.what-we-do__top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-we-do__title{
+  margin-top: 20px;
+}
+
+.what-we-do__column__title{
+  margin-top: 20px;
+}
+
+.what-we-do__text{
+  margin-top: 10px;
+}
+
+.what-we-do__body{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 80px;
+  row-gap: 60px;
+  margin-top: 50px;
+}
+
+
+.what-we-do__bottom{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-do__bottom button{
+  padding: 19px 45px;
+  color: #fff;
+}
+
+/*----------------------------------------ADAPTIV--------------------------------------------*/
+@media (max-width:900px){
+  .max1150px{
+    padding: 0px 100px;
+  }
+}
+
+
+@media (max-width:768px) {
+  .max1150px{
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width:550px){
+  .what-we-do__bottom button{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width:500px){
+  .what-we-do__body{
+    row-gap: 40px;
+  }
+}
+
+
+
+/*----------------------------------------Section3--------------------------------------------*/
+
+.how-we-works{
+  padding: 80px 0px;
+  color: #1C1F35;
+}
+
+.how-we-works__top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.how-we-works h2{
+  margin-top: 20px;
+}
+
+.how-we-works__body{
+  display: flex;
+  gap: 100px;
+}
+
+.how-we-works__body__column{
+  flex: 50%;
+}
+
+
+
+.how-we-works__first-column{
+  background-image: url('../img__services/section-3\ background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 50%;
+  position: relative;
+}
+
+
+.how-we-works__column__title span{
+  margin-right: 15px;
+}
+
+.how-we-works__column__title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.how-we-works__first-column img{
+  position: absolute;
+  border: 25px solid #fff;
+  height: 250px;
+  width: 269px;
+  right: -50px;
+  bottom: -50px;
+}
+
+
+/*----------------------------------------ADAPTIV--------------------------------------------*/
+
+@media (max-width:1000px){
+  .how-we-works__body{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .how-we-works__first-column{
+    min-height: 350px;
+    width: 70%;
+  }
+  .how-we-works__first-column img{
+  position: absolute;
+  border: 25px solid #fff;
+  height: 180px;
+  width: 199px;
+  right: -50px;
+  bottom: -50px;
+}
+}
+
+
+@media (max-width:900px){
+  .how-we-works__first-column img{
+    display: none;
+  }
+  .how-we-works__first-column{
+    width: 100%;
+    min-height: 500px;
+    background-position: top;
+  }
+}
+
+
+
+@media (max-width:600px){
+  .how-we-works__first-column{
+    width: 100%;
+    min-height: 280px;
+    background-position: top;
+  }
+  .how-we-works{
+    padding: 40px 0px;
+  }
+}
